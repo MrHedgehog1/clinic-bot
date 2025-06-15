@@ -38,6 +38,8 @@
 		<opencsv.version>5.7.1</opencsv.version>
 		<bouncycastle.version>1.70</bouncycastle.version>
 		<jakarta.version>3.1.0</jakarta.version>
+		<poi.version>5.4.1</poi.version>
+		<poi-ooxml.version>5.4.1</poi-ooxml.version>
 	</properties>
 	<dependencies>
 		<!-- Spring Boot -->
@@ -81,6 +83,19 @@
 			<artifactId>postgresql</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi-ooxml.version}</version>
+		</dependency>
+
+
 		<!-- Lombok (опционально) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -98,6 +113,16 @@
 			<groupId>org.telegram</groupId>
 			<artifactId>telegrambots-meta</artifactId>
 			<version>6.9.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>3.4.5</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>6.0</version>
 		</dependency>
 	</dependencies>
 
